@@ -13,11 +13,15 @@
 
 body {
     margin: 0;
+    background-color: var(--spider-black);
+    color: var(--ghost-white);
+    font-family: Arial, sans-serif;
 }
 
 header {
     text-align: center;
     padding: 2rem;
+    background-color: var(--spider-black);
 }
 
 nav {
@@ -36,8 +40,11 @@ nav a {
 
 .scene {
     display: none;
+    position: relative;
     min-height: 70vh;
     padding: 2rem;
+    overflow: hidden;
+    background: linear-gradient(#120d26, #24163d);
 }
 
 .scenes:not(:has(.scene:target)) .scene:first-child {
@@ -46,6 +53,81 @@ nav a {
 
 .scene:target {
     display: block;
+}
+
+.scene-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+}
+
+.moon {
+    position: absolute;
+    top: 3rem;
+    right: 10%;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: var(--candle-glow);
+    box-shadow: 0 0 30px var(--candle-glow);
+}
+
+.graveyard {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 45%;
+    background-color: #0b1610;
+}
+
+.grave {
+    position: absolute;
+    bottom: 0;
+    width: 55px;
+    height: 75px;
+    background-color: #5d5d68;
+    border-radius: 25px 25px 0 0;
+}
+
+.grave-1 {
+    left: 12%;
+}
+
+.grave-2 {
+    left: 25%;
+    height: 60px;
+}
+
+.grave-3 {
+    right: 15%;
+    height: 85px;
+}
+
+.gate {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 170px;
+    transform: translateX(-50%);
+}
+
+.gate-left,
+.gate-right {
+    position: absolute;
+    bottom: 0;
+    width: 85px;
+    height: 150px;
+    border: 5px solid #111;
+}
+
+.gate-left {
+    left: 0;
+}
+
+.gate-right {
+    right: 0;
 }
 
 a:focus-visible {
