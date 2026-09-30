@@ -351,6 +351,46 @@ nav a {
     height: 50px;
 }
 
+.owl {
+    position: absolute;
+    top: 25px;
+    right: 8%;
+    z-index: 2;
+    font-size: 2rem;
+    animation: owl-watch 4s ease-in-out infinite;
+}
+
+.path-walker {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    z-index: 3;
+    font-size: 2.5rem;
+    animation: path-stroll 7s ease-in-out infinite alternate;
+}
+
+.leaf {
+    position: absolute;
+    top: -50px;
+    z-index: 2;
+    font-size: 1.5rem;
+    animation: leaf-fall 8s linear infinite;
+}
+
+.leaf-1 {
+    left: 25%;
+}
+
+.leaf-2 {
+    left: 55%;
+    animation-delay: 3s;
+}
+
+.leaf-3 {
+    left: 80%;
+    animation-delay: 5s;
+}
+
 @keyframes cloud-drift {
     from {
         transform: translateX(0);
@@ -429,6 +469,37 @@ nav a {
 
     to {
         transform: translateX(calc(100vw + 200px));
+    }
+}
+
+@keyframes owl-watch {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes path-stroll {
+    from {
+        transform: translateX(-50%) translateY(0) scale(1);
+    }
+
+    to {
+        transform: translateX(-50%) translateY(-90px) scale(0.75);
+    }
+}
+
+@keyframes leaf-fall {
+    from {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    to {
+        transform: translateY(65vh) rotate(360deg);
     }
 }
 
