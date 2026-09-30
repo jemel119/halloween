@@ -541,6 +541,7 @@ nav a {
     height: 70px;
     background-color: #5d5d68;
     border-radius: 25px 25px 0 0;
+    cursor: pointer;
 }
 
 .crypt-grave-1 {
@@ -555,6 +556,28 @@ nav a {
 .crypt-grave-3 {
     right: 15%;
     height: 80px;
+}
+
+.grave-ghost {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    font-size: 2rem;
+    opacity: 0;
+    transform: translateX(-50%) translateY(15px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.crypt-grave:hover .grave-ghost,
+.crypt-grave:focus .grave-ghost {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-25px);
+}
+
+.crypt-grave:focus-visible {
+    outline: 3px solid var(--ghost-white);
+    outline-offset: 4px;
 }
 
 .pumpkin {
