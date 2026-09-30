@@ -490,6 +490,7 @@ nav a {
     bottom: 20px;
     z-index: 2;
     font-size: 2.5rem;
+    animation: pumpkin-flicker 2s ease-in-out infinite;
 }
 
 .pumpkin-1 {
@@ -498,6 +499,25 @@ nav a {
 
 .pumpkin-2 {
     right: 36%;
+    animation-delay: 1s;
+}
+
+.ghost {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    z-index: 3;
+    font-size: 3rem;
+    animation: ghost-float 5s ease-in-out infinite;
+}
+
+.spider {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 3;
+    font-size: 1.8rem;
+    animation: spider-drop 5s ease-in-out infinite;
 }
 
 @keyframes cloud-drift {
@@ -609,6 +629,41 @@ nav a {
 
     to {
         transform: translateY(65vh) rotate(360deg);
+    }
+}
+
+@keyframes ghost-float {
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(-70px);
+        opacity: 1;
+    }
+}
+
+@keyframes spider-drop {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(80px);
+    }
+}
+
+@keyframes pumpkin-flicker {
+    0%,
+    100% {
+        filter: brightness(0.8);
+    }
+
+    50% {
+        filter: brightness(1.5);
     }
 }
 
