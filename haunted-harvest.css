@@ -1,0 +1,16 @@
+:root {
+    --pumpkin: #ff7518;
+    --candy-purple: #5a189a;
+    --spider-black: #1a1423;
+    --slime-green: #8ac926;
+    --ghost-white: #f6f2f8;
+    --candle-glow: #ffd60a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
