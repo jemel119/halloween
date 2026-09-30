@@ -768,3 +768,269 @@ a:focus-visible {
     outline: 3px solid var(--candle-glow);
     outline-offset: 3px;
 }
+
+@media (max-width: 700px) {
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        gap: 0.5rem;
+    }
+
+    nav a {
+        padding: 0.65rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .scene {
+        min-height: 75vh;
+        padding: 1.5rem 1rem;
+    }
+
+    .scene-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .scene-content p {
+        font-size: 0.95rem;
+    }
+
+    .moon,
+    .crypt-moon {
+        width: 75px;
+        height: 75px;
+    }
+
+    .path-moon {
+        width: 85px;
+        height: 85px;
+    }
+
+    .graveyard {
+        height: 50%;
+    }
+
+    .gate {
+        width: 150px;
+        height: 150px;
+    }
+
+    .gate-left,
+    .gate-right {
+        width: 70px;
+        height: 130px;
+    }
+
+    .tree {
+        transform: scale(0.85);
+        transform-origin: bottom center;
+    }
+
+    .tree-left {
+        left: 1%;
+    }
+
+    .tree-right {
+        right: 1%;
+    }
+
+    .winding-path {
+        width: 180px;
+    }
+
+    .crypt-building {
+        width: 200px;
+        height: 160px;
+    }
+
+    .crypt-roof {
+        left: -20px;
+        width: 230px;
+    }
+
+    .pumpkin-1 {
+        left: 28%;
+    }
+
+    .pumpkin-2 {
+        right: 28%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .scene {
+        min-height: 80vh;
+        padding: 1rem;
+    }
+
+    .scene-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .scene-content p {
+        max-width: 280px;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 0.9rem;
+    }
+
+    .moon {
+        top: 6rem;
+        right: 5%;
+        width: 65px;
+        height: 65px;
+    }
+
+    .path-moon {
+        top: 6rem;
+        left: 5%;
+        width: 70px;
+        height: 70px;
+    }
+
+    .crypt-moon {
+        top: 6rem;
+        right: 5%;
+        width: 65px;
+        height: 65px;
+    }
+
+    .graveyard {
+        height: 48%;
+    }
+
+    .grave-1 {
+        left: 5%;
+    }
+
+    .grave-2 {
+        left: 18%;
+    }
+
+    .grave-3 {
+        right: 5%;
+    }
+
+    .gate {
+        width: 125px;
+        height: 135px;
+    }
+
+    .gate-left,
+    .gate-right {
+        width: 58px;
+        height: 115px;
+    }
+
+    .hearse {
+        font-size: 2.8rem;
+    }
+
+    .walker {
+        font-size: 2rem;
+    }
+
+    .tree {
+        transform: scale(0.7);
+    }
+
+    .tree-left {
+        left: -4%;
+    }
+
+    .tree-right {
+        right: -4%;
+    }
+
+    .winding-path {
+        width: 135px;
+    }
+
+    .path-grave-1 {
+        left: 18%;
+    }
+
+    .path-grave-2 {
+        right: 18%;
+    }
+
+    .path-grave-3 {
+        right: 28%;
+    }
+
+    .crypt-building {
+        width: 165px;
+        height: 145px;
+    }
+
+    .crypt-roof {
+        top: -45px;
+        left: -18px;
+        width: 190px;
+        height: 50px;
+    }
+
+    .crypt-door {
+        width: 60px;
+        height: 95px;
+    }
+
+    .crypt-step-1 {
+        width: 95px;
+    }
+
+    .crypt-step-2 {
+        width: 120px;
+    }
+
+    .crypt-grave {
+        transform: scale(0.8);
+        transform-origin: bottom center;
+    }
+
+    .crypt-grave-1 {
+        left: 5%;
+    }
+
+    .crypt-grave-2 {
+        left: 18%;
+    }
+
+    .crypt-grave-3 {
+        right: 5%;
+    }
+
+    .pumpkin {
+        font-size: 2rem;
+    }
+
+    .pumpkin-1 {
+        left: 23%;
+    }
+
+    .pumpkin-2 {
+        right: 23%;
+    }
+}
