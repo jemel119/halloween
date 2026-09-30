@@ -72,6 +72,49 @@ nav a {
     box-shadow: 0 0 30px var(--candle-glow);
 }
 
+.cloud {
+    position: absolute;
+    z-index: 1;
+    width: 140px;
+    height: 35px;
+    border-radius: 40px;
+    background-color: rgba(207, 199, 221, 0.35);
+    animation: cloud-drift 20s linear infinite;
+}
+
+.cloud::before,
+.cloud::after {
+    content: "";
+    position: absolute;
+    background-color: inherit;
+    border-radius: 50%;
+}
+
+.cloud::before {
+    width: 55px;
+    height: 55px;
+    top: -25px;
+    left: 25px;
+}
+
+.cloud::after {
+    width: 45px;
+    height: 45px;
+    top: -18px;
+    right: 20px;
+}
+
+.cloud-1 {
+    top: 5rem;
+    left: -160px;
+}
+
+.cloud-2 {
+    top: 9rem;
+    left: -220px;
+    animation-delay: 7s;
+}
+
 .graveyard {
     position: absolute;
     right: 0;
@@ -128,6 +171,51 @@ nav a {
 
 .gate-right {
     right: 0;
+}
+
+.fog {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    width: 300px;
+    height: 80px;
+    border-radius: 50%;
+    background: radial-gradient(
+        ellipse,
+        rgba(246, 242, 248, 0.3),
+        transparent 70%
+    );
+    animation: fog-drift 14s linear infinite;
+}
+
+.fog-1 {
+    left: -300px;
+}
+
+.fog-2 {
+    left: -400px;
+    bottom: 30px;
+    animation-delay: 6s;
+}
+
+@keyframes cloud-drift {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(100vw + 320px));
+    }
+}
+
+@keyframes fog-drift {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(100vw + 600px));
+    }
 }
 
 a:focus-visible {
