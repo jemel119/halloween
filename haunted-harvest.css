@@ -14,3 +14,41 @@
 body {
     margin: 0;
 }
+
+header {
+    text-align: center;
+    padding: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--ghost-white);
+    background-color: var(--candy-purple);
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+}
+
+.scene {
+    display: none;
+    min-height: 70vh;
+    padding: 2rem;
+}
+
+.scenes:not(:has(.scene:target)) .scene:first-child {
+    display: block;
+}
+
+.scene:target {
+    display: block;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--candle-glow);
+    outline-offset: 3px;
+}
