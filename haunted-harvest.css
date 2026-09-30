@@ -195,6 +195,16 @@ nav a {
     right: 0;
 }
 
+.hearse {
+    position: absolute;
+    bottom: 65px;
+    left: -100px;
+    z-index: 1;
+    font-size: 3.5rem;
+    filter: grayscale(1) brightness(0.55);
+    animation: hearse-drive 18s linear infinite;
+}
+
 .walker {
     position: absolute;
     bottom: 15px;
@@ -310,6 +320,16 @@ nav a {
 
     to {
         transform: translateX(calc(100vw + 120px));
+    }
+}
+
+@keyframes hearse-drive {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(100vw + 200px));
     }
 }
 
