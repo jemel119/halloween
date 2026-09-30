@@ -391,6 +391,115 @@ nav a {
     animation-delay: 5s;
 }
 
+.crypt-moon {
+    position: absolute;
+    top: 3rem;
+    right: 12%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--candle-glow);
+    box-shadow: 0 0 35px var(--candle-glow);
+}
+
+.crypt-ground {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 55%;
+    background-color: #08100b;
+}
+
+.crypt-building {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    width: 230px;
+    height: 180px;
+    background-color: #4b4a52;
+    border: 5px solid #2c2b31;
+    transform: translateX(-50%);
+}
+
+.crypt-roof {
+    position: absolute;
+    top: -55px;
+    left: -25px;
+    width: 270px;
+    height: 60px;
+    background-color: #35343b;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+.crypt-door {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 75px;
+    height: 115px;
+    background-color: #0c0a10;
+    border: 5px solid #29262e;
+    border-radius: 38px 38px 0 0;
+    transform: translateX(-50%);
+}
+
+.crypt-step {
+    position: absolute;
+    left: 50%;
+    height: 15px;
+    background-color: #5d5b64;
+    transform: translateX(-50%);
+}
+
+.crypt-step-1 {
+    bottom: -15px;
+    width: 115px;
+}
+
+.crypt-step-2 {
+    bottom: -30px;
+    width: 145px;
+}
+
+.crypt-grave {
+    position: absolute;
+    bottom: 20px;
+    width: 50px;
+    height: 70px;
+    background-color: #5d5d68;
+    border-radius: 25px 25px 0 0;
+}
+
+.crypt-grave-1 {
+    left: 12%;
+}
+
+.crypt-grave-2 {
+    left: 25%;
+    height: 55px;
+}
+
+.crypt-grave-3 {
+    right: 15%;
+    height: 80px;
+}
+
+.pumpkin {
+    position: absolute;
+    bottom: 20px;
+    z-index: 2;
+    font-size: 2.5rem;
+}
+
+.pumpkin-1 {
+    left: 36%;
+}
+
+.pumpkin-2 {
+    right: 36%;
+}
+
 @keyframes cloud-drift {
     from {
         transform: translateX(0);
