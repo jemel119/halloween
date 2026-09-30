@@ -115,6 +115,28 @@ nav a {
     animation-delay: 7s;
 }
 
+.bat {
+    position: absolute;
+    z-index: 2;
+    font-size: 1.5rem;
+    left: -60px;
+    animation: bat-fly 12s linear infinite;
+}
+
+.bat-1 {
+    top: 15%;
+}
+
+.bat-2 {
+    top: 23%;
+    animation-delay: 3s;
+}
+
+.bat-3 {
+    top: 10%;
+    animation-delay: 6s;
+}
+
 .graveyard {
     position: absolute;
     right: 0;
@@ -173,6 +195,15 @@ nav a {
     right: 0;
 }
 
+.cat {
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+    z-index: 1;
+    font-size: 2rem;
+    animation: cat-prowl 14s ease-in-out infinite;
+}
+
 .fog {
     position: absolute;
     z-index: 2;
@@ -215,6 +246,47 @@ nav a {
 
     to {
         transform: translateX(calc(100vw + 600px));
+    }
+}
+
+@keyframes bat-fly {
+    from {
+        transform: translateX(0) translateY(0);
+    }
+
+    50% {
+        transform: translateX(55vw) translateY(-20px);
+    }
+
+    to {
+        transform: translateX(110vw) translateY(10px);
+    }
+}
+
+@keyframes cat-prowl {
+    0% {
+        left: 5%;
+        transform: scaleX(-1);
+    }
+
+    48% {
+        left: 80%;
+        transform: scaleX(-1);
+    }
+
+    50% {
+        left: 80%;
+        transform: scaleX(1);
+    }
+
+    98% {
+        left: 5%;
+        transform: scaleX(1);
+    }
+
+    100% {
+        left: 5%;
+        transform: scaleX(-1);
     }
 }
 
